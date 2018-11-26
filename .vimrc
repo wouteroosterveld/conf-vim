@@ -15,7 +15,13 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
+
+" Online linting
 Plugin 'w0rp/ale'
+
+" File tree with GIT support
+Plugin 'scrooloose/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 let g:syntastic_check_on_open=1
 
