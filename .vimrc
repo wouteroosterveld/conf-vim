@@ -22,6 +22,11 @@ Plugin 'w0rp/ale'
 " File tree with GIT support
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+map <C-n> :NERDTreeToggle<CR>
+autocmd bufenter * if (winnr("$") ==1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 
 let g:syntastic_check_on_open=1
 
@@ -66,7 +71,8 @@ filetype plugin indent on    " required
 set t_Co=256
 syntax on
 set background=dark
-colorscheme distinguished
+"colorscheme distinguished
+colorscheme github
 
 " Enable delimitMate
 imap <C-c> <CR><Esc>0
