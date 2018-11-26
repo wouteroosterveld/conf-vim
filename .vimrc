@@ -71,6 +71,7 @@ filetype plugin indent on    " required
 
 set t_Co=256
 syntax on
+set number
 set background=light
 "colorscheme distinguished
 colorscheme PaperColor
