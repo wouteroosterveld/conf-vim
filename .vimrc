@@ -15,6 +15,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
+Plugin 'NLKNguyen/papercolor-theme'
 
 " Online linting
 Plugin 'w0rp/ale'
@@ -70,9 +71,9 @@ filetype plugin indent on    " required
 
 set t_Co=256
 syntax on
-set background=dark
+set background=light
 "colorscheme distinguished
-colorscheme github
+colorscheme PaperColor
 
 " Enable delimitMate
 imap <C-c> <CR><Esc>0
