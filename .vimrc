@@ -15,6 +15,7 @@ Plugin 'pangloss/vim-javascript'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'Raimondi/delimitMate'
 Plugin 'scrooloose/syntastic'
+Plugin 'w0rp/ale'
 
 let g:syntastic_check_on_open=1
 
