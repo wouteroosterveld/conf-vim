@@ -29,6 +29,7 @@ Plugin 'w0rp/ale'
 "autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 "map <C-n> :NERDTreeToggle<CR>
 "autocmd bufenter * if (winnr("$") ==1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 
 let g:syntastic_check_on_open=1
